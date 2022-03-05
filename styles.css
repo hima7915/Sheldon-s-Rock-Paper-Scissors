@@ -1,5 +1,5 @@
 body {
-    background-color: #BB6DF9;
+    background-color: #5F1BCE;
 }
 
 .opponent {
@@ -9,4 +9,55 @@ body {
     top: 0%;
     bottom: 0%;
     background-color: #FE5353;
+    z-index: -1;
+}
+
+.title {
+    text-align: center;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+.choice {
+    margin: auto;
+}
+
+.user {
+    background-size: 250px 250px;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    display: inline;
+}
+
+.users {
+    margin: 2%;
+    padding: 4%;
+}
+
+.scissors {
+    display: block;
+    position: relative;
+    left: 140px;
+    margin-top: 40px;
+}
+
+.btn {
+    margin-left: 2%;
+    border-radius: 20%;
+}
+
+.userwin {
+    visibility: hidden;
+    text-align: center;
+}
+
+.userlose {
+    visibility: hidden;
+    text-align: center;
+}
+
+.tie {
+    visibility: hidden;
+    text-align: center;
 }
