@@ -7,6 +7,7 @@ import Scissors from "./Assets/Scissors.png";
 import Spock from "./Assets/Spock.png";
 import { useState } from "react";
 import { user, oppo } from "./App";
+import {rounds} from "./slider";
 var usrscore = 0;
 var compscore = 0;
 
@@ -71,9 +72,37 @@ function Score() {
     {
     compscore=compscore+0.5;
     usrscore=usrscore+0.5;
-    
     }
     
+    if(compscore+usrscore===rounds)
+    {
+        if(compscore>usrscore)
+        {
+        return(
+            <div>
+                <h1>You Lose!! Haha Loser!</h1>
+            </div>
+        );
+        }
+        else if(usrscore>compscore)
+        {
+            return(
+                <div>
+                    <h1>Yeah you won. As if it matters.</h1>
+                </div>
+            );
+        }
+        else
+        {
+            return(
+                <div>
+                    <h1>It's a tie. You and your computer, both losers.</h1>
+                </div>
+            )
+        }
+
+    }
+
     return (
         <div>
             <div className="scorebox">
