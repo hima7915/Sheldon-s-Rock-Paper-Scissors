@@ -14,11 +14,11 @@ var compscore = 0;
 function Score() {
 
     const [choice, setChoice] = useState("");
-    function Reset(){
-        return(
-            setChoice(0)
-        );
-    }
+    // function Reset(){
+    //     return(
+    //         setChoice(0)
+    //     );
+    // }
     var zee;
     if (choice === 1)
         zee = Spock;
@@ -80,7 +80,7 @@ function Score() {
         {
         return(
             <div>
-                <h1>You Lose!! Haha Loser!</h1>
+                <h1>You Lose!! Hehe Loser!</h1>
             </div>
         );
         }

@@ -6,6 +6,7 @@
 h1{
   margin-left: 6%;
 }
+
 .Computer, .Multiplayer{
   margin-top: 10%;
   margin-left: 17%;
@@ -15,7 +16,8 @@ h1{
   width: 190px;
   border: none; 
   position: relative;
-}
+  
+} 
 
 .name{
   background-color: #282c34;
