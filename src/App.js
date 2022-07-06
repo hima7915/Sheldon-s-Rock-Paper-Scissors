@@ -2,11 +2,11 @@ import './App.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Slider from './slider';
 import robo from "./Assets/Robot.png";
 import multi from "./Assets/Multiplayer.png";
 import Game from "./gamecomp";
 import { useState } from 'react';
+import DSlider from './slider';
 
 var user="";
 var user1;
@@ -33,9 +33,10 @@ function App() {
       <form onSubmit={Submit}>
     <h1>Enter Your Name&emsp;&nbsp; <input className='name' type="text" placeholder="Type..." onChange={handleChange} value={name}></input></h1>
     <h1>Number of Rounds&nbsp; </h1>
-    <Slider onChange={handleChange1} value={val}/>  
+    {<DSlider />}
+    {console.log(DSlider.newValue)};
     <div>
-    <button className='Computer'><img src={robo}></img></button> 
+    <button classsName='Computer'><img src={robo}></img></button> 
     <button className='Multiplayer'><img src={multi}></img></button>
     </div> 
     </form>

@@ -7,11 +7,17 @@ import Scissors from "./Assets/Scissors.png";
 import Spock from "./Assets/Spock.png";
 import { useState } from "react";
 import { user, oppo } from "./App";
+var usrscore = 0;
+var compscore = 0;
 
 function Score() {
-    var usrscore = 0;
-    var compscore = 0;
+
     const [choice, setChoice] = useState("");
+    function Reset(){
+        return(
+            setChoice(0)
+        );
+    }
     var zee;
     if (choice === 1)
         zee = Spock;
@@ -36,6 +42,38 @@ function Score() {
         wee = Scissors;
     else if (cchoice === 5)
         wee = Lizard;
+
+    if ((choice === 1 && cchoice === 4) ||
+        (choice === 3 && cchoice === 1) ||
+        (choice === 1 && cchoice === 2) ||
+        (choice === 5 && cchoice === 1) ||
+        (choice === 2 && cchoice === 5) ||
+        (choice === 4 && cchoice === 5) ||
+        (choice === 5 && cchoice === 3) ||
+        (choice === 2 && cchoice === 4) ||
+        (choice === 3 && cchoice === 2) ||
+        (choice === 4 && cchoice === 3))
+        {usrscore = usrscore + 1;
+            }
+    else if ((cchoice === 1 && choice === 4) ||
+        (cchoice === 3 && choice === 1) ||
+        (cchoice === 1 && choice === 2) ||
+        (cchoice === 5 && choice === 1) ||
+        (cchoice === 2 && choice === 5) ||
+        (cchoice === 4 && choice === 5) ||
+        (cchoice === 5 && choice === 3) ||
+        (cchoice === 2 && choice === 4) ||
+        (cchoice === 3 && choice === 2) ||
+        (cchoice === 4 && choice === 3))
+        {compscore = compscore + 1;
+        }
+    else if(cchoice===choice)
+    {
+    compscore=compscore+0.5;
+    usrscore=usrscore+0.5;
+    
+    }
+    
     return (
         <div>
             <div className="scorebox">
@@ -62,6 +100,7 @@ function Score() {
                 <img className="compchoice" src={wee} alt="Choice"></img>
             </div>
         </div>
+        
     );
 }
 

@@ -18,6 +18,10 @@ code {
   margin: 1%;
 }
 
+.example-mark{
+  color:#000
+}
+
 .Robo, .score, .Multi, .userscore{
   display: inline;
 }
