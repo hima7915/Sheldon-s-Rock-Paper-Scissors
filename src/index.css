@@ -127,6 +127,27 @@ button{
   top: 51.75%;
 }
 
+.results{
+  text-align: center;
+}
+
+.playagain1{
+  position: relative;
+  left:10%;
+}
+.ido{
+  position: relative;
+}
+.playagain2{
+  font-family: Georgia, serif;
+  font-size: large;
+  height: 40px;
+  width: 80px;
+  border: 2px solid black;
+  border-color: #000;
+  border-radius: 10px;
+}
+
 @media only screen and (max-width: 1000px) {
   .one, .two, .three,.four,.five,.cone, .ctwo, .cthree,.cfour,.cfive,.Robo,.Multi,.ione, .itwo, .ithree,.ifour,.ifive,.icone, .ictwo, .icthree,.icfour,.icfive{
     height: 90px;
