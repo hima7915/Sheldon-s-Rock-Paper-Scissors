@@ -14,11 +14,11 @@ var compscore = 0;
 function Score() {
 
     const [choice, setChoice] = useState("");
-    // function Reset(){
-    //     return(
-    //         setChoice(0)
-    //     );
-    // }
+    function Reset(){
+        return(
+            setChoice(0)
+        );
+    }
     var zee;
     if (choice === 1)
         zee = Spock;
@@ -74,6 +74,8 @@ function Score() {
     usrscore=usrscore+0.5;
     }
     
+    //Reset();
+
     if(compscore+usrscore===rounds)
     {
         if(compscore>usrscore)
@@ -113,20 +115,20 @@ function Score() {
                 <img className="Multi" src={Multi} alt="Icon"></img>
             </div>
             <div className="user">
-                <button className="one" onClick={() => setChoice(1)}><img src={Spock} alt="Spock"></img></button>
-                <button className="two" onClick={() => setChoice(2)}><img src={Rock} alt="Rock"></img></button>
-                <button className="three" onClick={() => setChoice(3)}><img src={Paper} alt="Paper"></img></button>
-                <button className="four" onClick={() => setChoice(4)}><img src={Scissors} alt="Scissors"></img></button>
-                <button className="five" onClick={() => setChoice(5)}><img src={Lizard} alt="Lizard"></img></button>
+                <button className="one" onClick={() => setChoice(1)}><img className="ione" src={Spock} alt="Spock"></img></button>
+                <button className="two" onClick={() => setChoice(2)}><img className="itwo" src={Rock} alt="Rock"></img></button>
+                <button className="three" onClick={() => setChoice(3)}><img className="ithree" src={Paper} alt="Paper"></img></button>
+                <button className="four" onClick={() => setChoice(4)}><img className="ifour" src={Scissors} alt="Scissors"></img></button>
+                <button className="five" onClick={() => setChoice(5)}><img className="ifive" src={Lizard} alt="Lizard"></img></button>
                 <img className="usrchoice" src={zee} alt="Choice"></img>
             </div>
-            <div>
-                <button className="cone"><img src={Spock} alt="Spock"></img></button>
-                <button className="ctwo"><img src={Rock} alt="Rock"></img></button>
-                <button className="cthree"><img src={Paper} alt="Paper"></img></button>
-                <button className="cfour"><img src={Scissors} alt="Scissors"></img></button>
-                <button className="cfive"><img src={Lizard} alt="Lizard"></img></button>
+            <div className="user">
                 <img className="compchoice" src={wee} alt="Choice"></img>
+                <button className="cone"><img className="icone" src={Spock} alt="Spock"></img></button>
+                <button className="ctwo"><img className="ictwo" src={Rock} alt="Rock"></img></button>
+                <button className="cthree"><img className="icthree" src={Paper} alt="Paper"></img></button>
+                <button className="cfour"><img className="icfour" src={Scissors} alt="Scissors"></img></button>
+                <button className="cfive"><img className="icfive" src={Lizard} alt="Lizard"></img></button>
             </div>
         </div>
         
