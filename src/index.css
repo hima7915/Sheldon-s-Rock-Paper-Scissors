@@ -29,7 +29,7 @@ code {
 .userscore{
   position: absolute;
   top: 5.5%;
-  left: 220px;
+  left: 15%;
   font-family: 'Shojumaru', cursive;
   font-size: large;
 }
@@ -44,7 +44,7 @@ code {
 .score{
   position: absolute;
   top: 5.5%;
-  right: 220px;
+  right: 15%;
   font-family: 'Shojumaru', cursive;
   font-size: large;
   text-align: right;
@@ -127,37 +127,23 @@ button{
   top: 51.75%;
 }
 
-@media only screen and (max-width: 1000px) {
-  .one, .two, .three,.four,.five,.cone, .ctwo, .cthree,.cfour,.cfive,.Robo,.Multi,.ione, .itwo, .ithree,.ifour,.ifive,.icone, .ictwo, .icthree,.icfour,.icfive{
-    height: 90px;
-    width: 90px;
-  }
-  .userscore{
-    top: 1.5%;
-    left: 110px;
-    font-size: small;
-  }
-  .vs{
-    position: absolute;
-    left: 47%;
-    top: 4.5%;
-    font-family: 'Shojumaru', cursive;
-    font-size: large;
-  }
-  .score{
-    top: 1.5%;
-    right: 110px;
-    font-size: small;
-    text-align: right;
-  }
-  
-  .user{
-    text-align: center;
-  }
-  .one, .two, .three,.four,.five,.cone, .ctwo, .cthree,.cfour,.cfive{
-    text-align: center;
-    position: relative;
-    margin: 5px;
-    left: 0;
-  }
+.results{
+  text-align: center;
+}
+
+.playagain1{
+  position: relative;
+  left:10%;
+}
+.ido{
+  position: relative;
+}
+.playagain2{
+  font-family: Georgia, serif;
+  font-size: large;
+  height: 40px;
+  width: 80px;
+  border: 2px solid black;
+  border-color: #000;
+  border-radius: 10px;
 }
