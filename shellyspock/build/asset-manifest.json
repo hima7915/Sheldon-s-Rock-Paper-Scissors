@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.de228d5d.css",
+    "main.js": "/static/js/main.1c273710.js",
+    "static/js/787.3b826130.chunk.js": "/static/js/787.3b826130.chunk.js",
+    "static/media/Multiplayer.png": "/static/media/Multiplayer.156a6f2fd996fcd9316e.png",
+    "static/media/Lizard.png": "/static/media/Lizard.6376b0bc7e775be7be2d.png",
+    "index.html": "/index.html",
+    "main.de228d5d.css.map": "/static/css/main.de228d5d.css.map",
+    "main.1c273710.js.map": "/static/js/main.1c273710.js.map",
+    "787.3b826130.chunk.js.map": "/static/js/787.3b826130.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de228d5d.css",
+    "static/js/main.1c273710.js"
+  ]
+}
